@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'demonfirLib_Example' do
+  pod 'demonfirLib', :path => '../'
+
+  target 'demonfirLib_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end
